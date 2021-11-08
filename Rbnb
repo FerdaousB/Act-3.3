@@ -1,0 +1,340 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>AirBnb</title>
+    <style>
+	.blockSreach{
+	
+	
+	}
+    .titre{
+
+    }
+	.button {
+  position: absolute;
+  display: inline-block;
+  width: 200px;
+  height: 60px;
+  margin: auto;
+  margin-left:860px;
+  margin-top :500px;
+ 
+  
+  font-size: 24px;
+ 
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #C6017E;
+  background-color: #white;
+  border: none;
+  border-radius: 15px;
+}
+
+.button:hover {background-color: #white}
+
+.button:active {
+  background-color: #white;
+  box-shadow: 0 5px #white;
+  transform: translateY(2px);
+}
+        @media(min-width: 768px) {
+            section {
+              
+            }
+
+            section {
+                padding-bottom: 3.5rem;
+            }
+        }
+
+        .br0,
+        .gj-datepicker-bootstrap [role=right-icon] button,
+        .form-control {
+            border-radius: 0 !important
+        }
+.card-img-top{
+ margin :5px;
+ border-radius: 10px;
+
+}
+
+
+.btn1:active {
+  background-color: #white;
+  box-shadow: 0 5px #white;
+   transform: translateY(2px);
+}
+
+.btn {
+  position: absolute;
+  display: inline-block;
+  width: 200px;
+  height: 60px;
+  margin: auto;
+  margin-left:150px;
+  margin-top :200px;
+ 
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: ##484848;
+  border: none;
+  border-radius: 15px;
+}
+.btn:hover {background-color: #white}
+
+        
+    </style>
+   
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <script src="https://unpkg.com/gijgo@1.9.13/js/gijgo.min.js" type="text/javascript"></script>
+    <link href="https://unpkg.com/gijgo@1.9.13/css/gijgo.min.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+    <div class="container-fluid" style="height:100vh">
+        <nav class="bg-primaryX navbar navbar-expand-xl navbar-dark  fixed-top">
+
+            <div class="container">
+                <svg width="102" height="32" fill="white" style="display: block;"><path d="M29.24 22.68c-.16-.39-.31-.8-.47-1.15l-.74-1.67-.03-.03c-2.2-4.8-4.55-9.68-7.04-14.48l-.1-.2c-.25-.47-.5-.99-.76-1.47-.32-.57-.63-1.18-1.14-1.76a5.3 5.3 0 00-8.2 0c-.47.58-.82 1.19-1.14 1.76-.25.52-.5 1.03-.76 1.5l-.1.2c-2.45 4.8-4.84 9.68-7.04 14.48l-.06.06c-.22.52-.48 1.06-.73 1.64-.16.35-.32.73-.48 1.15a6.8 6.8 0 007.2 9.23 8.38 8.38 0 003.18-1.1c1.3-.73 2.55-1.79 3.95-3.32 1.4 1.53 2.68 2.59 3.95 3.33A8.38 8.38 0 0022.75 32a6.79 6.79 0 006.75-5.83 5.94 5.94 0 00-.26-3.5zm-14.36 1.66c-1.72-2.2-2.84-4.22-3.22-5.95a5.2 5.2 0 01-.1-1.96c.07-.51.26-.96.52-1.34.6-.87 1.65-1.41 2.8-1.41a3.3 3.3 0 012.8 1.4c.26.4.45.84.51 1.35.1.58.06 1.25-.1 1.96-.38 1.7-1.5 3.74-3.21 5.95zm12.74 1.48a4.76 4.76 0 01-2.9 3.75c-.76.32-1.6.41-2.42.32-.8-.1-1.6-.36-2.42-.84a15.64 15.64 0 01-3.63-3.1c2.1-2.6 3.37-4.97 3.85-7.08.23-1 .26-1.9.16-2.73a5.53 5.53 0 00-.86-2.2 5.36 5.36 0 00-4.49-2.28c-1.85 0-3.5.86-4.5 2.27a5.18 5.18 0 00-.85 2.21c-.13.84-.1 1.77.16 2.73.48 2.11 1.78 4.51 3.85 7.1a14.33 14.33 0 01-3.63 3.12c-.83.48-1.62.73-2.42.83a4.76 4.76 0 01-5.32-4.07c-.1-.8-.03-1.6.29-2.5.1-.32.25-.64.41-1.02.22-.52.48-1.06.73-1.6l.04-.07c2.16-4.77 4.52-9.64 6.97-14.41l.1-.2c.25-.48.5-.99.76-1.47.26-.51.54-1 .9-1.4a3.32 3.32 0 015.09 0c.35.4.64.89.9 1.4.25.48.5 1 .76 1.47l.1.2c2.44 4.77 4.8 9.64 7 14.41l.03.03c.26.52.48 1.1.73 1.6.16.39.32.7.42 1.03.19.9.29 1.7.19 2.5zM41.54 24.12a5.02 5.02 0 01-3.95-1.83 6.55 6.55 0 01-1.6-4.48 6.96 6.96 0 011.66-4.58 5.3 5.3 0 014.08-1.86 4.3 4.3 0 013.7 1.92l.1-1.57h2.92V23.8h-2.93l-.1-1.76a4.52 4.52 0 01-3.88 2.08zm.76-2.88c.58 0 1.09-.16 1.57-.45.44-.32.8-.74 1.08-1.25.25-.51.38-1.12.38-1.8a3.42 3.42 0 00-1.47-3.04 2.95 2.95 0 00-3.12 0c-.44.32-.8.74-1.08 1.25a4.01 4.01 0 00-.38 1.8 3.42 3.42 0 001.47 3.04c.47.29.98.45 1.55.45zM53.45 8.46c0 .35-.06.67-.22.93-.16.25-.38.48-.67.64-.29.16-.6.22-.92.22-.32 0-.64-.06-.93-.22a1.84 1.84 0 01-.67-.64 1.82 1.82 0 01-.22-.93c0-.36.07-.68.22-.93.16-.3.39-.48.67-.64.29-.16.6-.23.93-.23a1.84 1.84 0 011.6.86 2 2 0 01.21.94zm-3.4 15.3V11.7h3.18v12.08h-3.19zm11.68-8.9v.04c-.15-.07-.35-.1-.5-.13-.2-.04-.36-.04-.55-.04-.89 0-1.56.26-2 .8-.48.55-.7 1.32-.7 2.31v5.93h-3.19V11.69h2.93l.1 1.83c.32-.64.7-1.12 1.24-1.48a3.1 3.1 0 011.81-.5c.23 0 .45.02.64.06.1.03.16.03.22.06v3.2zm1.28 8.9V6.74h3.18v6.5c.45-.58.96-1.03 1.6-1.38a5.02 5.02 0 016.08 1.31 6.55 6.55 0 011.6 4.49 6.96 6.96 0 01-1.66 4.58 5.3 5.3 0 01-4.08 1.86 4.3 4.3 0 01-3.7-1.92l-.1 1.57-2.92.03zm6.15-2.52c.57 0 1.08-.16 1.56-.45.44-.32.8-.74 1.08-1.25.26-.51.38-1.12.38-1.8 0-.67-.12-1.28-.38-1.79a3.75 3.75 0 00-1.08-1.25 2.95 2.95 0 00-3.12 0c-.45.32-.8.74-1.09 1.25a4.01 4.01 0 00-.38 1.8 3.42 3.42 0 001.47 3.04c.47.29.98.45 1.56.45zm7.51 2.53V11.69h2.93l.1 1.57a3.96 3.96 0 013.54-1.89 4.1 4.1 0 013.82 2.44c.35.76.54 1.7.54 2.75v7.24h-3.19v-6.82c0-.84-.19-1.5-.57-1.99-.38-.48-.9-.74-1.56-.74-.48 0-.9.1-1.27.32-.35.23-.64.52-.86.93a2.7 2.7 0 00-.32 1.35v6.92h-3.16zm12.52 0V6.73h3.19v6.5a4.67 4.67 0 013.73-1.89 5.02 5.02 0 013.95 1.83 6.57 6.57 0 011.59 4.48 6.95 6.95 0 01-1.66 4.58 5.3 5.3 0 01-4.08 1.86 4.3 4.3 0 01-3.7-1.92l-.09 1.57-2.93.03zm6.18-2.53c.58 0 1.09-.16 1.56-.45.45-.32.8-.74 1.09-1.25.25-.51.38-1.12.38-1.8a3.42 3.42 0 00-1.47-3.04 2.95 2.95 0 00-3.12 0c-.44.32-.8.74-1.08 1.25a3.63 3.63 0 00-.38 1.8 3.42 3.42 0 001.47 3.04c.47.29.95.45 1.55.45z"></path></svg>         
+                <!-- Collapse -->
+                <div class="collapse navbar-collapse justify-content-center align-items-center" id="navbarCollapse">
+
+                    <!-- Links -->
+                    <ul class="navbar-nav justify-content-center align-items-center ">
+                        <li class="nav-item ">
+                            <a class="nav-link active" class="font-weight-bold" href="#">Hébergements</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Expériences</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="#">Expériences en ligne</a>
+                        </li>
+                        
+                    </ul>
+
+
+                </div> <!-- / .navbar-collapse -->
+
+            </div> <!-- / .container --> 
+		
+        </nav>
+		
+
+        <section class="section section-top section-full">
+
+            <!-- Cover -->
+            <div class="bg-cover" style="background:url('https://a0.muscache.com/im/pictures/57b9f708-bb12-498c-bc33-769f8fc43e63.jpg?im_w=2560');
+
+                                         position: absolute;
+                                         top: 0;
+                                         left: 0;
+                                         right: 0;
+                                         bottom: 0;
+                                         background-repeat: no-repeat;
+                                         height: auto;
+                                         background-position: 0%;
+                                         text-shadow: white 0px 0px 7px;
+                                         background-size: cover;
+                                        background-position:right center;"></div>
+
+           
+          </section> 
+        <div class="container blockSreach">
+            <div class="row justify-content-center align-items-center">               
+                        <div class="card border ">
+                                    <form class="row">
+                                         <input class="col-xs-1 text-center"  placeholder="Adresse" aria-label="Adresse" style ="height:50px;">
+                                         <input class="col-xs-1 text-center" type="Arrivée" placeholder="Arrivée" aria-label="Arrivée">
+                                         <input class="col-xs-1 text-center" type="Départ" placeholder="Départ" aria-label="Départ">
+                                         <input class="col-xs-1 text-center" type="Voyageurs" placeholder="Voyageurs" aria-label="Voyageurs">
+
+
+                                    </form>   
+								
+                        </div>
+                </div>
+  </div>
+
+
+  
+    <div>
+        <div class="row" id="titre"  >
+        <div class="col-xs-1 justify-content-center align-items-center text-center">
+            <h4 class="font-weight-bold" >Vous ne savez pas ou partir ? Parfait !</h4>
+        </div>
+      </div>
+ 
+           <div class="row">   
+                        <div class="card">
+                         <button class="button">Je suis flexible</button>  		
+                        </div>
+            </div>
+  </div>
+           
+           </div>              	  
+  </div> 
+ </div>
+
+
+
+
+
+
+
+
+
+
+
+    
+           
+    <div class="container-fluid container ">
+        <h1 class="font-weight-bold">Chez vous, partout</h1>
+        <div class="row mt-4  ">
+            <div class="col-md-3">
+                <div class="card mb-3 border-0">
+                    <img src="C:/Users/fboussemma/Desktop/TalanAcademy/img1.jpg" style="  width:300px; "  class="card-img-top br0"  alt="...">
+                    <div class="card-body p-0">             
+                        <h5 class="card-title">Escapades en pleine nature</h5>   
+                   
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card mb-3 border-0">
+                    <img src="C:/Users/fboussemma/Desktop/TalanAcademy/img2.jpg"  style="  width:300px; " class="card-img-top br0" alt="...">
+                    <div class="card-body p-0">
+                     <h5 class="card-title">Logements uniques</h5>    
+
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-3  ">
+                <div class="card mb-3 border-0">
+                    <img src="C:/Users/fboussemma/Desktop/TalanAcademy/img3.jpg"  style="  width:300px; "   class="card-img-top br0" alt="...">
+                    <div class="card-body p-0">
+                      <h5 class="card-title">Logements entiers</h5>   
+
+                    </div>
+                </div>
+            </div>
+</div>
+
+
+
+</div>
+     <div class=" container-fluid container">
+        <div class="row mt-4  ">
+            <div class="col-md-3 justify-content-center align-items-center">
+                 <div class="card mb-3 border-0">
+                    <img src="C:/Users/fboussemma/Desktop/TalanAcademy/img4.jpg"  class="rounded"  style="  width:880px; "  alt="...">
+                    
+                    <button class="btn btn-light">En savoir plus</button>
+                </div>
+            </div>
+       </div>
+    </div>
+
+
+
+
+        
+    </div>
+     <div class=" container-fluid container">
+       <h1 class="font-weight-bold">Découvrez des activités</h1>
+        <div class="row mt-4  ">
+            <div class="col-md-3">
+                 <div class="card mb-3 border-0">
+                    <img src="C:/Users/fboussemma/Desktop/TalanAcademy/img5.jpg"   style="  width:300px; " class="card-img-top br0" alt="...">
+                    <div class="card-body p-0">
+                     
+                        <h5 class="card-title">Expériences</h5>   
+                        <p class="card-text">Des activités inoubliables près de chez vous.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card mb-3 border-0">
+                    <img src="C:/Users/fboussemma/Desktop/TalanAcademy/img6.jpg"  style="  width:300px; " class="card-img-top br0" alt="...">
+                    <div class="card-body p-0">
+                     <h5 class="card-title">Expériences en ligne</h5> 
+                     <p class="card-text">Des activités interactives en direct, animées par des hôtes.</p>   
+
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-3">
+                <div class="card mb-3 border-0">
+                    <img src="C:/Users/fboussemma/Desktop/TalanAcademy/img7.jpg"  style="  width:300px; " class="card-img-top br0" alt="...">
+                    <div class="card-body p-0">
+                      <h5 class="card-title">Collection à la une </h5> 
+                      <p class="card-text">Voyagez depuis chez vous grâce aux expériences en ligne.</p>  
+
+                    </div>
+                </div>
+            </div>
+        
+    </div>
+    <div class="container-fluid container">
+        <div class="container pl-0">
+            <div class="row">
+                <div class="col-12 pl-0 mb-5">                   
+                    <h4>Des idées pour vos prochaines escapades.</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+    <!-- Optional JavaScript -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script>
+        var today = new Date(new Date().getFullYear(), new Date().getMonth(), new Date().getDate());
+        $('#startDate').datepicker({
+            uiLibrary: 'bootstrap4',
+            iconsLibrary: 'fontawesome',
+            minDate: today,
+            maxDate: function() {
+                return $('#endDate').val();
+            }
+        });
+        $('#endDate').datepicker({
+            uiLibrary: 'bootstrap4',
+            iconsLibrary: 'fontawesome',
+            minDate: function() {
+                return $('#startDate').val();
+            }
+        });
+    </script>
+</body></html>
